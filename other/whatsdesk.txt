@@ -1,0 +1,2 @@
+https://zerkc.gitlab.io/whatsdesk/
+https://zerkc.gitlab.io/whatsdesk/whatsdesk_0.3.9_amd64.deb
