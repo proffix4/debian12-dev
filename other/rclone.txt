@@ -1,0 +1,2 @@
+/usr/bin/rclone
+--dir-cache-time 10s --vfs-cache-mode full
