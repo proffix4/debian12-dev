@@ -15,6 +15,9 @@ sudo mv winetricks /usr/bin/winetricks
 # MS .Net 4.8 + MS Fonts
 winetricks dotnet48 allfonts 
 
+# Set Wine to Windows 11 mode
+winecfg -v win11
+
 # далее:
 # изменить dpi экрана на 110 в winetricks
 # 1) wine VC_redist.x64.exe
