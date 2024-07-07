@@ -33,3 +33,9 @@
 **C++:**
 
 * [CLion](https://www.jetbrains.com/clion/download/#section=linux)
+
+**MySQL Workbench 8:**
+
+* [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)
+
+* [MySQL Workbench 8](https://dev.mysql.com/downloads/workbench/)
