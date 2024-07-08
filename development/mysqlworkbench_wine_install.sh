@@ -13,7 +13,7 @@ chmod +x winetricks
 sudo mv winetricks /usr/bin/winetricks
 
 # MS .Net 4.8 + MS Fonts
-winetricks dotnet48 allfonts 
+winetricks dotnet48 allfonts
 
 # Set Wine to Windows 11 mode
 winecfg -v win11
