@@ -2,8 +2,8 @@
 Version=1.1
 Type=Application
 Name=Rider
-Icon=/home/tsn/Development/rider/bin/rider.png
-Exec=/home/tsn/Development/rider/bin/rider.sh
+Icon=/opt/rider/bin/rider.png
+Exec=/opt/rider/bin/rider.sh
 Actions=
 Categories=Development;
 StartupWMClass=jetbrains-rider
