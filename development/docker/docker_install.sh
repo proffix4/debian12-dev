@@ -24,5 +24,6 @@ newgrp docker
 sudo docker run hello-world
 
 # Signing in with Docker Desktop for Linux
+sudo apt install pass -y
 gpg --generate-key
 pass init ВАШ_ОТКРЫТЙ_КЛЮЧ_КОТОРЫЙ_ВЫ_СГЕНЕРИРОВАЛИ_С_ВАШЕЙ_ПОЧТОЙ_АККАУНТА_DOCKER

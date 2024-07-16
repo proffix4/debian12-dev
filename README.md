@@ -1,7 +1,6 @@
 # debian12-dev
 
-**[Debian GNU/Linux 12 bookworm (x86-64)](https://www.debian.org/)
-(Cinnamon: 5.6.8, KDE Plasma: 5.27.5 (Qt 5.15.8), Gnome: 43.9)**
+**[DEBIAN:](https://www.debian.org/)**
 
 * [Образы ISO](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), 
 **[Debian 12.6 с cinnamon](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-12.6.0-amd64-cinnamon.iso)**
