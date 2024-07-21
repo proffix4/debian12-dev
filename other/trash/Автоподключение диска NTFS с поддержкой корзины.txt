@@ -1,0 +1,1 @@
+nosuid,nodev,nofail,x-gvfs-show,nobootwait,permissions
