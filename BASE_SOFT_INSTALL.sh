@@ -6,7 +6,7 @@ sudo apt install pdfarranger drawing vlc ffmpeg obs-studio gtkhash img2pdf -y
 sudo apt install curl wget xfburn gparted synaptic gdebi smartmontools -y
 sudo apt install p7zip-full unace arj cabextract -y
 sudo apt install ksnip riseup-vpn telegram-desktop redshift redshift-gtk shotcut -y
-sudo apt install pavucontrol ntpdate ntp imagemagick -y
+sudo apt install pavucontrol ntpdate ntp imagemagick clementine -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
 sudo apt autoremove -y
