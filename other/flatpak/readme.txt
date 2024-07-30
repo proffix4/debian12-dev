@@ -1,0 +1,1 @@
+https://flatpak.org/setup/Debian

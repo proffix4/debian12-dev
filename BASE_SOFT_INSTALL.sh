@@ -7,6 +7,7 @@ sudo apt install curl wget xfburn gparted synaptic gdebi smartmontools -y
 sudo apt install p7zip-full unace arj cabextract -y
 sudo apt install ksnip riseup-vpn telegram-desktop redshift redshift-gtk shotcut -y
 sudo apt install pavucontrol ntpdate ntp imagemagick cantata mpd strawberry -y
+sudo apt install neofetch systemd-timesyncd libavcodec-extra -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
 sudo apt autoremove -y
