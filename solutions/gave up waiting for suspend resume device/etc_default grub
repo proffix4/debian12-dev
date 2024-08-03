@@ -1,0 +1,1 @@
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=787706cc-9874-44ae-bb8a-334bac274ae4"

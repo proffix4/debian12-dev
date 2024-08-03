@@ -21,7 +21,7 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 # Test Docker
-sudo docker run hello-world
+docker run hello-world
 
 # Signing in with Docker Desktop for Linux
 sudo apt install pass -y

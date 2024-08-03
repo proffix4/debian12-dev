@@ -1,11 +1,11 @@
 #!/bin/sh
-sudo apt update && sudo apt upgrade
+sudo apt-get update -y && sudo apt full-upgrade -y
 sudo apt install wget -y
 cd /tmp
 wget https://repo.mysql.com//mysql-apt-config_0.8.30-1_all.deb
 sudo dpkg -i mysql-apt-config_0.8.30-1_all.deb
-sudo apt update
-sudo apt install mysql-server
+sudo apt update -y
+sudo apt install mysql-server -y
 apt policy mysql-server
 sudo systemctl status mysql 
 sudo systemctl start mysql

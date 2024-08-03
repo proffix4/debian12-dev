@@ -1,0 +1,1 @@
+https://snapcraft.io/docs/installing-snap-on-debian
