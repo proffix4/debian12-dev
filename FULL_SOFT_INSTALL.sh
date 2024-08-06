@@ -4,13 +4,14 @@ sudo apt-get update -y && sudo apt full-upgrade -y
 #--------------------------------------------------------------------------------------
 echo BASE soft install ...
 
-sudo apt install thunderbird thunderbird-l10n-ru birdtray gthumb retext qbittorrent -y
+sudo apt install thunderbird thunderbird-l10n-ru birdtray retext qbittorrent -y
 sudo apt install pdfarranger drawing vlc ffmpeg obs-studio gtkhash img2pdf -y
 sudo apt install curl wget xfburn gparted synaptic gdebi smartmontools -y
 sudo apt install p7zip-full unace arj cabextract -y
 sudo apt install ksnip riseup-vpn telegram-desktop redshift redshift-gtk shotcut -y
 sudo apt install pavucontrol ntpdate ntp imagemagick cantata mpd strawberry -y
 sudo apt install neofetch libavcodec-extra -y
+sudo apt install lightdm-settings -y
 #sudo apt install systemd-timesyncd nala stacer -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
@@ -57,7 +58,7 @@ winecfg -v win11
 #--------------------------------------------------------------------------------------
 echo SNAP + snap soft install ...
 
-sudo apt update
+sudo apt update -y
 sudo apt install snapd
 sudo snap install snap-store
 snap install mysql-workbench-community
@@ -173,6 +174,15 @@ sudo docker run hello-world
 
 # For signing
 sudo apt install pass -y
+
+#--------------------------------------------------------------------------------------
+echo Flatpak + flathub soft install ...
+
+sudo apt update -y
+sudo apt install flatpak -y
+sudo apt install gnome-software-plugin-flatpak -y
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub org.gnome.gThumb -y
 
 # Final -----------------------------------------
 echo Final ...
