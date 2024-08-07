@@ -1,0 +1,5 @@
+1. Add the following line to either /etc/sysctl.conf file or a new *.conf file (e.g. idea.conf) under /etc/sysctl.d/ directory:
+fs.inotify.max_user_watches = 524288
+
+2. Then run this command to apply the change:
+sudo sysctl -p --system

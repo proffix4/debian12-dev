@@ -1,0 +1,1 @@
+winecfg -v win11
