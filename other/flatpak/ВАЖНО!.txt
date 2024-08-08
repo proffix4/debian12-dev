@@ -1,0 +1,2 @@
+Для доступа программы из flatpak ко всем файлам ОС ей нужно разово дать разрешение, например:
+sudo flatpak override --filesystem=host:rw org.gnome.gThumb

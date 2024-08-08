@@ -11,7 +11,7 @@ sudo apt install p7zip-full unace arj cabextract -y
 sudo apt install ksnip riseup-vpn telegram-desktop redshift redshift-gtk shotcut -y
 sudo apt install pavucontrol ntpdate ntp imagemagick cantata mpd strawberry -y
 sudo apt install neofetch libavcodec-extra -y
-sudo apt install lightdm-settings -y
+sudo apt install lightdm-settings dconf-editor -y
 #sudo apt install systemd-timesyncd nala stacer -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
@@ -182,7 +182,9 @@ sudo apt update -y
 sudo apt install flatpak -y
 sudo apt install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flatseal -y
 flatpak install flathub org.gnome.gThumb -y
+sudo flatpak override --filesystem=host:rw org.gnome.gThumb
 
 # Final -----------------------------------------
 echo Final ...
