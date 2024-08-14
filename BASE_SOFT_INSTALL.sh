@@ -12,4 +12,5 @@ sudo apt install lightdm-settings dconf-editor -y
 #sudo apt install systemd-timesyncd nala stacer -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
+gsettings set org.gnome.nm-applet disable-connected-notifications "true"
 sudo apt autoremove -y
