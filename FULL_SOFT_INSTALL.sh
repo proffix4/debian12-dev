@@ -70,7 +70,7 @@ echo PRO soft install ...
 
 sudo apt-get install git -y
 sudo apt install default-jdk -y
-sudo apt install build-essential gdb libgtk-3-dev -y
+sudo apt install build-essential gdb gdbserver libgtk-3-dev -y
 sudo apt install nasm edb-debugger -y
 sudo apt install checkinstall -y
 
