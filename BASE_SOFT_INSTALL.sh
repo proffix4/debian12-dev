@@ -7,7 +7,7 @@ sudo apt install curl wget xfburn gparted dosfstools mtools synaptic gdebi smart
 sudo apt install p7zip-full unace arj cabextract -y
 sudo apt install ksnip riseup-vpn telegram-desktop redshift redshift-gtk shotcut -y
 sudo apt install pavucontrol ntpdate ntp imagemagick cantata mpd strawberry -y
-sudo apt install neofetch libavcodec-extra -y
+sudo apt install neofetch libavcodec-extra mc -y
 sudo apt install lightdm-settings dconf-editor -y
 #sudo apt install systemd-timesyncd nala stacer -y
 sudo apt install rclone-browser -y
