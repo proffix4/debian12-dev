@@ -12,7 +12,8 @@ sudo apt install ksnip riseup-vpn telegram-desktop redshift redshift-gtk shotcut
 sudo apt install pavucontrol ntpdate ntp imagemagick cantata mpd strawberry -y
 sudo apt install neofetch libavcodec-extra mc -y
 sudo apt install lightdm-settings dconf-editor -y
-#sudo apt install systemd-timesyncd nala stacer -y
+sudo apt install systemd-timesyncd -y
+#sudo apt install nala stacer -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
 gsettings set org.gnome.nm-applet disable-connected-notifications "true"
@@ -145,6 +146,17 @@ sudo systemctl enable mysql
 
 sudo mysql_secure_installation
 
+#--------------------------------------------------------------------------------------
+echo Flatpak + flathub soft install ...
+
+sudo apt update -y
+sudo apt install flatpak -y
+sudo apt install gnome-software-plugin-flatpak -y
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install flatseal -y
+flatpak install flathub org.gnome.gThumb -y
+sudo flatpak override --filesystem=host:rw org.gnome.gThumb
+
 # Docker -----------------------------------------
 echo Docker soft install ...
 
@@ -165,31 +177,25 @@ sudo apt-get update -y
 # Install Docker
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
-# Add USER to Docker
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-
-# Test Docker
-sudo docker run hello-world
-
 # For signing
 sudo apt install pass -y
 
-#--------------------------------------------------------------------------------------
-echo Flatpak + flathub soft install ...
-
-sudo apt update -y
-sudo apt install flatpak -y
-sudo apt install gnome-software-plugin-flatpak -y
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install flatseal -y
-flatpak install flathub org.gnome.gThumb -y
-sudo flatpak override --filesystem=host:rw org.gnome.gThumb
-
 # Final -----------------------------------------
+
 echo Final ...
 
 sudo apt-get update -y && sudo apt full-upgrade -y
 sudo apt autoremove -y
 sudo fstrim -av
+
+# Add USER to Docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
+# fix docker group
+newgrp docker
+
+# Test Docker
+sudo docker run hello-world
+
+
