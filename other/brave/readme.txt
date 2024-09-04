@@ -1,0 +1,1 @@
+https://brave.com/linux/#release-channel-installation
