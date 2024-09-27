@@ -45,11 +45,11 @@ sudo apt install wine -y
 sudo mkdir -pm755 /etc/apt/keyrings
 sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
-sudo apt update
+sudo apt update -y
 sudo apt install --install-recommends winehq-stable -y
 sudo apt install --install-recommends winehq-stable:i386 -y
 
-winecfg -v win11
+#winecfg -v win11
 
 cd "${HOME}/Downloads"
 wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
@@ -57,7 +57,7 @@ chmod +x winetricks
 sudo mv winetricks /usr/bin/winetricks
 winetricks pptfonts
 
-winecfg -v win11
+#winecfg -v win11
 
 #--------------------------------------------------------------------------------------
 echo SNAP + snap soft install ...
@@ -194,10 +194,11 @@ sudo fstrim -av
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
+# Wine config
+winecfg -v win11
+
 # fix docker group
 newgrp docker
 
 # Test Docker
-sudo docker run hello-world
-
-
+#sudo docker run hello-world

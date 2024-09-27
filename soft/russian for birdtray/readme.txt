@@ -1,0 +1,1 @@
+/usr/share/ulduzsoft/birdtray/translations
