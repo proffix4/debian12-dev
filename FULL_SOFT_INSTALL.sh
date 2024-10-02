@@ -16,6 +16,7 @@ sudo apt install systemd-timesyncd -y
 sudo apt install iotop pidgin-otr -y
 sudo apt install geeqie -y
 sudo apt install hdparm -y
+sudo apt-get install cups foomatic-db -y
 #sudo apt install nala stacer -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
