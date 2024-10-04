@@ -40,7 +40,7 @@ pip3 install python-docx XlsxWriter openpyxl
 pip3 install ebooklib pykson bs4 pygame
 pip3 install requests html2text beautifulsoup4 wget 
 pip3 install Pillow 
-sudo pip3 pyinstaller
+sudo pip3 install pyinstaller
 pip3 install mysql-connector-python pykson
 
 # sudo apt search python3-wx
