@@ -10,7 +10,7 @@ sudo apt update
 sudo apt install --install-recommends winehq-stable -y
 sudo apt install --install-recommends winehq-stable:i386 -y
 
-winecfg -v win11
+#winecfg -v win11
 
 cd "${HOME}/Downloads"
 wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks

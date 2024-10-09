@@ -59,7 +59,7 @@ chmod +x winetricks
 sudo mv winetricks /usr/bin/winetricks
 winetricks pptfonts
 
-#winecfg -v win11
+winecfg -v win11
 
 #--------------------------------------------------------------------------------------
 echo SNAP + snap soft install ...
@@ -144,7 +144,7 @@ sudo dpkg -i mysql-apt-config_0.8.30-1_all.deb
 sudo apt update -y
 sudo apt install mysql-server -y
 apt policy mysql-server
-sudo systemctl status mysql 
+#sudo systemctl status mysql 
 sudo systemctl start mysql
 sudo systemctl enable mysql
 
