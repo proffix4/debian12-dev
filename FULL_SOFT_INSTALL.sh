@@ -21,6 +21,7 @@ sudo apt-get install cups foomatic-db -y
 sudo apt install rclone-browser -y
 sudo -v ; curl https://rclone.org/install.sh | sudo bash
 gsettings set org.gnome.nm-applet disable-connected-notifications "true"
+gsettings set org.cinnamon.desktop.wm.preferences button-layout 'icon,menu:minimize,maximize,close'
 sudo apt autoremove -y
 
 #--------------------------------------------------------------------------------------

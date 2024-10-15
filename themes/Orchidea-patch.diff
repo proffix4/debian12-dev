@@ -1,0 +1,44 @@
+--- ./cinnamon(orig).css	2024-10-09 10:47:00.000000000 +0500
++++ ./cinnamon.css	2024-10-14 19:18:33.800393992 +0500
+@@ -153,7 +153,7 @@
+   min-width: 15em;
+   color: rgba(255, 255, 255, 0.9);
+   background-color: rgba(32, 32, 32, 0.95);
+-  border-radius: 12px;
++  border-radius: 0px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.285), 0 6px 3px rgba(0, 0, 0, 0.345);
+   margin: 6px;
+   padding: 4px 0;
+@@ -351,7 +351,7 @@
+  * Panel (panel.js)
+  * ===================================================================*/
+ #panel {
+-  background-color: rgba(0, 0, 0, 0.6);
++  background-color: rgba(26, 26, 26, 1);
+   transition-duration: 250ms;
+   font-weight: bold;
+   height: 34px;
+@@ -417,19 +417,19 @@
+ }
+ 
+ .panel-top {
+-  border-radius: 0 0 12px 12px;
++  border-radius: 0;
+ }
+ 
+ .panel-bottom {
+-  border-radius: 12px 12px 0 0;
++  border-radius: 0;
+ }
+ 
+ .panel-left {
+-  border-radius: 0 12px 12px 0;
++  border-radius: 0;
+ }
+ 
+ .panel-right {
+-  border-radius: 12px 0 0 12px;
++  border-radius: 0;
+ }
+ 
+ .panel-status-button {

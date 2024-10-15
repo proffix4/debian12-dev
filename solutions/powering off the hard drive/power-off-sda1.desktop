@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Выключить HDD
+Exec=sudo hdparm -Y /dev/sda1
+Comment=Выключить HDD
+Terminal=true
+Icon=gnome-disks-state-standby-symbolic
+Type=Application

@@ -1,0 +1,11 @@
+--- ./cinnamon(orig).css	2024-10-14 16:25:25.000000000 +0500
++++ ./cinnamon.css	2024-10-14 16:36:14.174983126 +0500
+@@ -254,7 +254,7 @@
+ }
+ .menu {
+ 	color: #ffffff;
+-	font-size: 10pt;
++	font-size: 11pt;
+ 	min-width: 250px;
+ 	padding-top: 0.6em;
+ 	padding-bottom: 0.6em;
