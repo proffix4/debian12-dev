@@ -37,7 +37,7 @@ apply_theme "Orchidea"
 apply_theme "Tomcat"
 
 # Обработка темы WhiteSur-Dark-solid
-apply_theme "WhiteSur-Dark-solid"
+#apply_theme "WhiteSur-Dark-solid"
 
 # Устанавливаем тему Orchidea по умолчанию
 echo "Устанавливаем тему Orchidea по умолчанию..."
