@@ -35,6 +35,7 @@ python3 -m pip install --upgrade pip
 
 sudo apt install python3-pip python3-pyqt5 python3-pyqt5.qtsql qttools5-dev-tools -y
 sudo apt install pyqt5-dev-tools python3-dev libjpeg62-turbo-dev python3-tk python3-matplotlib -y
+sudo apt-get install pandoc -y
 pip3 install setuptools numpy pandas openpyxl xlrd
 pip3 install python-docx XlsxWriter openpyxl
 pip3 install ebooklib pykson bs4 pygame
