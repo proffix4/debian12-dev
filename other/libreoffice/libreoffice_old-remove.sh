@@ -1,0 +1,1 @@
+sudo apt remove libreoffice-* && sudo apt autoremove && sudo apt autoclean
