@@ -1,0 +1,18 @@
+	Compiler configurations : 
+Basic -> Shared mode : Static
+wxWidgets -> Use installed wxWidgets : Yes
+
+	--- GCC Unicode Release: ---
+Tool configuration -> Compiler bin path : %AUTO%
+Commands -> C++ commands : g++
+Commands -> Linker commands : g++
+Flags -> Extra compile flags : %AUTO%
+Flags -> Libraries : $(shell wx-config --libs std --cxxflags)
+
+	--- GCC Unicode Release Windows ---
+Tool configuration -> Compiler bin path : /usr/x86_64-w64-mingw32/bin
+Commands -> C++ commands : x86_64-w64-mingw32-g++
+Commands -> Linker commands : x86_64-w64-mingw32-g++
+Flags -> Extra compile flags : $(shell /usr/x86_64-w64-mingw32/bin/wx-config --cxxflags)
+Flags -> Libraries : $(shell /usr/x86_64-w64-mingw32/bin/wx-config --libs) --static
+ 

@@ -5,12 +5,12 @@ sudo apt upgrade -y
 
 sudo apt install build-essential libgtk-3-dev gdb wget -y
 
-rm -Rf wxWidgets-3.2.5
+rm -Rf wxWidgets-3.2.6
 
-wget https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.5/wxWidgets-3.2.5.tar.bz2
-tar xf wxWidgets-3.2.5.tar.bz2
+wget https://github.com/wxWidgets/wxWidgets/releases/download/v3.2.6/wxWidgets-3.2.6.tar.bz2
+tar xf wxWidgets-3.2.6.tar.bz2
 
-cd wxWidgets-3.2.5
+cd wxWidgets-3.2.6
 
 mkdir buildgtk
 cd buildgtk
@@ -21,4 +21,4 @@ sudo ldconfig
 cd ..
 cd ..
 
-rm wxWidgets-3.2.5.tar.bz2
+rm wxWidgets-3.2.6.tar.bz2

@@ -1,0 +1,15 @@
+	-- for linux build: --
+Compiler -> C++ Compiler Options : -g;-O0;-Wall;$(shell wx-config --cxxflags --unicode=yes)
+Compiler -> C Compiler Options :   -g;-O0;-Wall;$(shell wx-config --cxxflags --unicode=yes)
+Linker -> Linker Options : $(shell wx-config --libs --unicode=yes)
+Resources -> Resources Compiler Options : $(shell wx-config --rcflags)
+Build Settings -> gnu g++ -> Tools -> C++ Compiler : g++ 
+Build Settings -> gnu g++ -> Tools -> Linker : g++
+
+	-- for windows build: --
+Compiler -> C++ Compiler Options : -g;-O0;-Wall;$(shell /usr/x86_64-w64-mingw32/bin/wx-config --cxxflags --unicode=yes)
+Compiler -> C Compiler Options :   -g;-O0;-Wall;$(shell /usr/x86_64-w64-mingw32/bin/wx-config --cxxflags --unicode=yes)
+Linker -> Linker Options : $(shell /usr/x86_64-w64-mingw32/bin/wx-config --libs --unicode=yes) --static
+Resources -> Resources Compiler Options : $(shell /usr/x86_64-w64-mingw32/bin/wx-config --rcflags)
+Build Settings -> gnu g++ -> Tools -> C++ Compiler : x86_64-w64-mingw32-g++ 
+Build Settings -> gnu g++ -> Tools -> Linker : x86_64-w64-mingw32-g++

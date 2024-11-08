@@ -1,0 +1,22 @@
+	--- for linux build: ---
+Project properties -> Build -> Toolkit : GNU
+
+Project properties -> Build -> C++ compiler -> Tool: g++
+Project properties -> Build -> C++ compiler -> Additional options : `wx-config --cxxflags`
+
+Project properties -> Build -> Linker -> Tool: g++
+Project properties -> Build -> Linker -> Additional options : `wx-config --libs`
+
+Project properties -> Build -> Change toolkit path : off
+
+-----------------------------------------------------------------------
+	--- for windows build: ---
+Project properties -> Build -> Toolkit : cross_windows
+
+Project properties -> Build -> C++ compiler -> Tool: x86_64-w64-mingw32-g++
+Project properties -> Build -> C++ compiler -> Additional options : `/usr/x86_64-w64-mingw32/bin/wx-config --cxxflags`
+
+Project properties -> Build -> Linker -> Tool: x86_64-w64-mingw32-g++
+Project properties -> Build -> Linker -> Additional options : `/usr/x86_64-w64-mingw32/bin/wx-config --libs`  --static`
+
+Project properties -> Build -> Change toolkit path : off

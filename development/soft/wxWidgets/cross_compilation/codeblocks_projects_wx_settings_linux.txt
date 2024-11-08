@@ -1,0 +1,15 @@
+Global compiler settings -> Toolchain executables -> Compiler's installation directory : /usr
+
+	-- for linux build: --
+Project build options -> Compiler Settings -> Other compiler options : `wx-config --cflags`
+Project build options -> Linker Settings -> Other linker options : `wx-config --libs`
+Global compiler settings -> Toolchain executables -> C++ compiler : g++
+Global compiler settings -> Toolchain executables -> Linker for dynamic libs : g++
+Global compiler settings -> Toolchain executables -> Linker for static libs : ar
+
+	-- for windows build: --
+Project build options -> Compiler Settings -> Other compiler options : `/usr/x86_64-w64-mingw32/bin/wx-config --cflags  --unicode=yes`
+Project build options -> Linker Settings -> Other linker options : `/usr/x86_64-w64-mingw32/bin/wx-config --libs --unicode=yes` --static
+Global compiler settings -> Toolchain executables -> C++ compiler : x86_64-w64-mingw32-g++
+Global compiler settings -> Toolchain executables -> Linker for dynamic libs : x86_64-w64-mingw32-g++
+Global compiler settings -> Toolchain executables -> Linker for static libs : x86_64-w64-mingw32-ar
